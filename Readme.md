@@ -2,14 +2,28 @@ About
 =============
 Basic iptables rules for a custom firewall.
 
-tom@0x101.com
-
 Usage
 ------------
 It needs iptables: http://www.netfilter.org/projects/iptables/
 
-on_rules.sh => turn on the iptables rules
+Turn on the rules
 
-off_rules.sh => turn off the rules
+```shell
+$ on_rules.sh
+```
 
-disconnect.sh => disconnect network interfaces
+Turn off the rules
+
+```shell
+$ off_rules.sh
+```
+
+Disconnect all of the network interfaces
+
+```shell
+$ sh disconnect.sh
+```
+
+### Author ###
+
+tom@0x101.com
