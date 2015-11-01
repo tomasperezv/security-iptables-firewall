@@ -39,6 +39,10 @@ iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 iptables -A OUTPUT -p tcp --dport 80 -j ACCEPT
 iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 
+# WEB clients - development
+iptables -A OUTPUT -p tcp --dport 9000 -j ACCEPT
+iptables -A INPUT -p tcp --dport 9000 -j ACCEPT
+
 iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
 iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 
